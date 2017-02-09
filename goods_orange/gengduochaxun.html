@@ -24,13 +24,119 @@
         <section>
         	<div class="business">
         		<ul>
-        			<li class="on"><a href="">全部业务</a></li>
-        			<li><a href="">业务类型<img src="img/images1/gengduo_03.jpg"/></a></li>
-        			<li><a href="">业务状态<img src="img/images1/gengduo_03.jpg"/></a></li>
-        			<li><a href="">仅看冻结</a></li>
+        			<li class="on o"><a>全部业务</a><div></div></li>
+        			<li><a>业务类型<img src="img/images1/gengduo_03.jpg" class="i"/></a>
+                         <div>
+         				<p class="se">购买商品</p>
+        				<p>售后退款</p>
+        				<p>优橙定制</p>
+        				<p>平台充值</p>
+        				<p class="n">平台定制<p>                        	
+                         </div>
+        			
+        			</li>
+        			<li><a>业务状态<img src="img/images1/gengduo_03.jpg" class="i"/></a>
+                         <div>
+         				<p class="se">购买商品</p>
+        				<p>售后退款</p>
+        				<p>优橙定制</p>
+        				<p>平台充值</p>
+        				<p class="n">平台定制<p>                        	
+                         </div>
+
+        			</li>
+        			<li><a>仅看冻结</a><div></div></li>
         		</ul>
+        	</div>
+        	<div class="oms">
+        		<div class="oms1">
+        			<p>销售退款 : <span class="f">-230.00元</span> </p>
+        			<p>交易时间 : 2016-06-16 13:44</p>
+        		</div>
+        		<div class="oms2">
+        		    <p>订单编号 : DKFAO11</p>
+        			<p><span>已完成</span></p>
+        		</div>
+        	</div>
+        	        	<div class="oms">
+        		<div class="oms1">
+        			<p>销售收入 : <span class="z">+230.00元</span> </p>
+        			<p>交易时间 : 2016-06-16 13:44</p>
+        		</div>
+        		<div class="oms2">
+        		    <p>订单编号 : DKFAO11</p>
+        			<p><span>已完成</span></p>
+        		</div>
+        	</div>
+        	        	<div class="oms">
+        		<div class="oms1">
+        			<p>销售收入 : <span class="z">+230.00元</span> </p>
+        			<p>交易时间 : 2016-06-16 13:44</p>
+        		</div>
+        		<div class="oms2">
+        		    <p>订单编号 : DKFAO11</p>
+        			<p><span class="j">进行中</span></p>
+        		</div>
+        	</div>
+        	        	<div class="oms">
+        		<div class="oms1">
+        			<p>销售退款 : <span class="f">-230.00元</span> </p>
+        			<p>交易时间 : 2016-06-16 13:44</p>
+        		</div>
+        		<div class="oms2">
+        		    <p>订单编号 : DKFAO11</p>
+        			<p><span>已完成</span></p>
+        		</div>
+        	</div>
+        	        	<div class="oms">
+        		<div class="oms1">
+        			<p>销售退款 : <span class="f">-230.00元</span> </p>
+        			<p>交易时间 : 2016-06-16 13:44</p>
+        		</div>
+        		<div class="oms2">
+        		    <p>订单编号 : DKFAO11</p>
+        			<p><span>已完成</span></p>
+        		</div>
+        	</div>
+        	        	<div class="oms">
+        		<div class="oms1">
+        			<p>销售退款 : <span class="f">-230.00元</span> </p>
+        			<p>交易时间 : 2016-06-16 13:44</p>
+        		</div>
+        		<div class="oms2">
+        		    <p>订单编号 : DKFAO11</p>
+        			<p><span>已完成</span></p>
+        		</div>
         	</div>
         </section>
 	</div>
 </body>
+<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+   $(function(){
+   	$(".business>ul>li>div").hide();
+   	$(".business>ul>li").click(function(){
+   		var $index=$(this).index();	 
+     		$(".business>ul>li").removeClass('on').eq($index).addClass("on");
+     			$(".business>ul>li>div");
+     		     		if($index==0||$index==3){
+     			$(".business>ul>li>div").hide();		
+     		}
+     		     if($index==1){
+     			$(".business>ul>li>div").eq(2).hide();		
+     		}
+     		          	 if($index==2){
+     			$(".business>ul>li>div").eq(1).hide();		
+     		}
+     		   	 	$(".i").click(function(){
+   	 		   	$(".business>ul>li>div").hide().eq($index).show();
+     		if($index==0||$index==3){
+     			$(".business>ul>li>div").hide();		
+     		}
+     		
+   	 	})
+
+   	})
+   })
+</script>
 </html>
